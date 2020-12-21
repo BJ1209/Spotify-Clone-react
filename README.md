@@ -6,7 +6,7 @@
 
 ![Login-Page](./src/images/login.jpg)
 
-### WhatsApp Clone GIF
+### Spotify Clone GIF
 
 ![Spotify-Clone-App](./src/images/Spotify-Clone.gif)
 
