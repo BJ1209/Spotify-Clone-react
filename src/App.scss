@@ -1,0 +1,37 @@
+// ----------------- Color Variables----------------------
+
+$black: #000;
+$black-body: #121212;
+$black-dark: #040404;
+$grey-hover: #282828;
+$grey-item: #181818;
+$grey-text: #b3b3b3;
+$nav: #070707;
+$spotify-play: #1db954;
+
+//------------------ FONT MEDIA QUERIES -----------------
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  * {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 600px) {
+  * {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  * {
+    font-size: 7px;
+  }
+}

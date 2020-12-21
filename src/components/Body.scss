@@ -1,0 +1,18 @@
+@import "../App.scss";
+
+.body {
+  flex: 0.86;
+  background: $black-body;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 1.5px solid $black;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__collection {
+  display: flex;
+  margin: 0 1.8em;
+}

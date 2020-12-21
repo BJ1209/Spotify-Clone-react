@@ -1,0 +1,143 @@
+@import "../App.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.8em 1.8em 0.9em;
+  background: rgba($nav, 0);
+  transition: background 300ms ease;
+  &.show--nav {
+    background: rgba($nav, 1);
+  }
+}
+.header__left {
+  flex: 0.65;
+  background-color: #fff;
+  color: gray;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  height: 2.5em;
+  min-width: 130px;
+  margin-left: 1em;
+  & > input {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding-left: 1em;
+  }
+  & > svg {
+    font-size: 2rem !important;
+    color: #111;
+  }
+}
+.header__leftIcons {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+
+  & > button {
+    background-color: $black-dark;
+    border: 0;
+    outline: 0;
+    color: #d1d1d1;
+    border-radius: 50%;
+    width: 2.4em;
+    height: 2.4em;
+    display: grid;
+    place-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  & > button:disabled {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    cursor: not-allowed;
+  }
+  & > button:first-of-type {
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+  }
+}
+.header__playlistName {
+  margin-left: 1.5em;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.5s ease 0.2s;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+.header__playlistName.show {
+  opacity: 1;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  background-color: $black-dark;
+  border-radius: 35px;
+  padding: 0 1em 0 0.25em;
+  height: 2em;
+  & > h4 {
+    margin-left: 0.5em;
+    font-size: 0.9rem;
+    color: white;
+  }
+}
+.MuiAvatar-root {
+  width: 27px !important;
+  height: 27px !important;
+}
+
+/* -----------------------MEDIA QUERIES-------------------------- */
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .header__right {
+    border-radius: 50%;
+    height: 2.8em;
+    width: 2.8em;
+    & > h4 {
+      display: none;
+    }
+  }
+  .header {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .header {
+    padding: 1.2em 1.8em 1.3em;
+    height: 52px;
+  }
+  .MuiAvatar-root {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .header__right {
+    padding: 0.1em 0 0.1em 0.23em;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 600px) {
+  .header {
+    padding: 1.2em 1.8em 1.3em;
+    height: 45px;
+  }
+  .MuiAvatar-root {
+    width: 21px !important;
+    height: 21px !important;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .header {
+    padding: 1.2em 1.8em 1.3em;
+    height: 38 px;
+  }
+  .MuiAvatar-root {
+    width: 16.5px !important;
+    height: 16.5px !important;
+  }
+}

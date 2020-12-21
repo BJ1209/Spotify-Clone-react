@@ -1,0 +1,32 @@
+@import "../App.scss";
+
+.category {
+  padding: 0 1.8em;
+  margin-top: 2.5em;
+  &.first {
+    margin-top: 1.5em;
+  }
+  &.last {
+    margin-bottom: 2em;
+  }
+
+  & > h2 {
+    margin-top: -0.6em;
+    color: #fff;
+    margin-left: 0.3em;
+    margin-bottom: 0.6em;
+    letter-spacing: -1px;
+  }
+  & > span {
+    color: $grey-text;
+    display: block;
+    margin-top: -1em;
+    margin-bottom: 1em;
+  }
+}
+.category__cards {
+  display: flex;
+  &.category__expandCards {
+    flex-wrap: wrap;
+  }
+}

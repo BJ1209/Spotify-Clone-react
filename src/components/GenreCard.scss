@@ -1,0 +1,23 @@
+.genreCard {
+  background-color: rgb(83, 83, 83);
+  position: relative;
+  width: 11.5em;
+  height: 11.5em;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0.7em;
+  cursor: pointer;
+  & > h1 {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+    font-weight: 500;
+  }
+  & > div {
+    background: #7f7f7f;
+    width: 6.5em;
+    height: 6.5em;
+    transform: rotate(25deg) translateY(-6%) translateX(110%);
+  }
+}
